@@ -34,7 +34,7 @@ This is a simple PHP web application that allows users to:
 
 ---
 
-## ⚙️ How to Run (Using XAMPP)
+##  How to Run (Using XAMPP)
 
 ### 1. Download the ZIP File
 
