@@ -63,7 +63,7 @@ age INT,
 status TINYINT(1) DEFAULT 0
 );
 
-
+'''
 ---
 
 ### 4. Configure Database Connection
