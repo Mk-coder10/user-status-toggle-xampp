@@ -1,4 +1,4 @@
-# User Status Toggle Web App (PHP + MySQL)
+# 🧩 User Status Toggle Web App (PHP + MySQL)
 
 This is a simple PHP web application that allows users to:
 - Submit their name and age through a form
@@ -29,14 +29,64 @@ This is a simple PHP web application that allows users to:
 - One-line input form (Name, Age)  
 - Stores records into a MySQL database  
 - Displays all records in a table  
-- Toggle button for each record to update the `status` value between 0 and 1  
-- Changes reflect immediately on the page after toggling  
+- Toggle button for each record to update the `status` between 0 and 1  
+- Changes reflect immediately after toggling  
 
 ---
 
 ## ⚙️ How to Run (Using XAMPP)
 
-### 1. Download or Clone the Repository
+### 1. Download the ZIP File
 
-```bash
-git clone https://github.com/yourusername/user-status-toggle-xampp.git
+Click the green **Code** button in the GitHub repo, then choose **Download ZIP**.  
+Extract it anywhere on your computer.
+
+---
+
+### 2. Start XAMPP Services
+
+Open **XAMPP Control Panel** and start:
+- Apache  
+- MySQL  
+
+---
+
+### 3. Set Up the Database
+
+1. Go to: http://localhost/phpmyadmin  
+2. Create a new database called: `employee_db`  
+3. Run this SQL query:
+CREATE TABLE employees (
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100),
+age INT,
+status TINYINT(1) DEFAULT 0
+);
+
+
+---
+
+### 4. Configure Database Connection
+
+In your `index.php` file (or `db.php`), use this connection code:
+
+<?php $conn = new mysqli("localhost", "root", "", "employee_db"); if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error); } ?>
+
+
+---
+
+### 5. Open the Project in Your Browser
+
+Put the extracted folder into this path:
+
+Then open your browser and go to:
+
+http://localhost/employee_app/index.php
+
+
+## 📁 Project Structure
+
+user-status-toggle-xampp/
+├── index.php # Main form and table display
+└── toggle.php # Script to toggle status
+
