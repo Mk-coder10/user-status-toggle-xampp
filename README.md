@@ -53,11 +53,10 @@ Open the XAMPP Control Panel and start:
 
 4. **Set Up the Database**
    
-1-Go to http://localhost/phpmyadmin
+1.Go to http://localhost/phpmyadmin
+2.Create a new database called: employee_db
 
-2-Create a new database called: employee_db
-
-3-Run this SQL code to create the table:
+3.Run this SQL code to create the table:
 
 CREATE TABLE employees (
     id INT AUTO_INCREMENT PRIMARY KEY,
