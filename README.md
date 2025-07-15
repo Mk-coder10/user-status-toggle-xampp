@@ -86,7 +86,6 @@ http://localhost/employee_app/index.php
 
 ## 📁 Project Structure
 
-user-status-toggle-xampp/
 ├── index.php # Main form and table display
 └── toggle.php # Script to toggle status
 
