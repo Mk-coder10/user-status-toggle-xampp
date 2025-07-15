@@ -1,4 +1,4 @@
-# 🧩 User Status Toggle Web App (PHP + MySQL)
+#  User Status Toggle Web App (PHP + MySQL)
 
 This is a simple PHP web application that allows users to:
 - Submit their name and age through a form
@@ -15,7 +15,7 @@ This is a simple PHP web application that allows users to:
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - HTML / CSS  
 - PHP  
@@ -24,7 +24,7 @@ This is a simple PHP web application that allows users to:
 
 ---
 
-## 🚀 Features
+##  Features
 
 - One-line input form (Name, Age)  
 - Stores records into a MySQL database  
