@@ -5,11 +5,11 @@ This is a simple PHP web application that allows users to:
 - Display all employees from a MySQL database
 - Toggle the status (0 or 1) for each user in real-time
 
-> ✅ Built and tested using **XAMPP** on localhost.
+> Built and tested using **XAMPP** on localhost.
 
 ---
 
-## 📸 Screenshot
+##  Screenshot
 
 <img width="573" height="266" alt="image" src="https://github.com/user-attachments/assets/eefe7367-fe15-4e8c-b02a-9195042f8ff4" />
 
