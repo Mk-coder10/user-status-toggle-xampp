@@ -53,26 +53,33 @@ Open **XAMPP Control Panel** and start:
 
 ### 3. Set Up the Database
 
-1. Go to: http://localhost/phpmyadmin  
+1. Go to: [http://localhost/phpmyadmin](http://localhost/phpmyadmin)  
 2. Create a new database called: `employee_db`  
 3. Run this SQL query:
-CREATE TABLE employees (
-id INT AUTO_INCREMENT PRIMARY KEY,
-name VARCHAR(100),
-age INT,
-status TINYINT(1) DEFAULT 0
-);
 
-'''
+```sql
+CREATE TABLE employees (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
+    status TINYINT(1) DEFAULT 0
+);
+```
 ---
 
 ### 4. Configure Database Connection
 
 In your `index.php` file (or `db.php`), use this connection code:
 
-<?php $conn = new mysqli("localhost", "root", "", "employee_db"); if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error); } ?>
+```php
+<?php
+$conn = new mysqli("localhost", "root", "", "employee_db");
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
 
-
+```
 ---
 
 ### 5. Open the Project in Your Browser
@@ -85,7 +92,7 @@ http://localhost/employee_app/index.php
 
 
 ## 📁 Project Structure
-
+```
 ├── index.php # Main form and table display
 └── toggle.php # Script to toggle status
 
